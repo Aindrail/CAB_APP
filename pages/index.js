@@ -24,7 +24,7 @@ export default function Home() {
 }
 
 const Wrapper = tw.div`
- flex flex-col bg-red-300 h-screen
+ flex flex-col  h-screen
 `
 
 const Action = tw.div`
