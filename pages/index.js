@@ -9,15 +9,15 @@ import Image from 'next/image'
 
 export default function Home() {
 
-  useEffect(() => {
-    const map = new mapboxgl.Map({
+  // useEffect(() => {
+  //   const map = new mapboxgl.Map({
     
-    container: "map",
-    style: 'mapbox://styles/drakosi/ckvcwq3rwdw4314o3i2ho8tph',
-    center: [77.947998, 23.473324],
-    zoom: 5,
-    })
-    })
+  //   container: "map",
+  //   style: 'mapbox://styles/drakosi/ckvcwq3rwdw4314o3i2ho8tph',
+  //   center: [77.947998, 23.473324],
+  //   zoom: 5,
+  //   })
+  //   })
 
 
   // const map = new mapboxgl.Map({
