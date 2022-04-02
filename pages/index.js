@@ -75,9 +75,9 @@ flex items-center
 const Name = tw.div`
 mr-4 w-20 text-lg
 `
-// const UserImage = tw.img `
-// h-12 w-12 rounded-full border border-black-200 p-px
-// `
+const UserImage = tw.img `
+h-12 w-12 rounded-full border border-black-200 p-px
+`
 
 const ActionButtons = tw.div `
 flex 
