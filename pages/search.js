@@ -20,12 +20,12 @@ const Search = () => {
 
        </FromToIcons>
 
-       {/* <InputBoxes>
+       <InputBoxes>
        
         <Input placeholder='Enter pickup location' />
         <Input placeholder='Where to ?' />
        
-       </InputBoxes> */}
+       </InputBoxes>
       <PlusIcon src="https://img.icons8.com/ios/50/000000/plus-math.png" />
       </InputContainer>
 
