@@ -26,7 +26,7 @@ const Search = () => {
         <Input placeholder='Where to ?' />
        
        </InputBoxes>
-      <PlusIcon src="https://img.icons8.com/ios/50/000000/plus-math.png" />
+      {/* <PlusIcon src="https://img.icons8.com/ios/50/000000/plus-math.png" /> */}
       </InputContainer>
 
       <SavedPlaces>
