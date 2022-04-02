@@ -50,9 +50,9 @@ bg-white  px-4
 const BackButton = tw.img`
 h-12
 `
-const InputContainer = tw.div `
-bg-white flex items-center px-4 mb-2
-`
+// const InputContainer = tw.div `
+// bg-white flex items-center px-4 mb-2
+// `
 const FromToIcons = tw.div `
  w-10 flex flex-col mr-2 items-center
 `
