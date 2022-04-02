@@ -10,7 +10,7 @@ const Search = () => {
           <BackButton src="https://img.icons8.com/ios-filled/50/000000/left.png" /> 
       </ButtonContainer>
 
-      <InputContainer>
+      {/* <InputContainer>
        <FromToIcons>
          <Circle src="https://img.icons8.com/ios-filled/50/9CA3AF/filled-circle.png" />
 
@@ -27,7 +27,7 @@ const Search = () => {
        
        </InputBoxes>
       <PlusIcon src="https://img.icons8.com/ios/50/000000/plus-math.png" />
-      </InputContainer>
+      </InputContainer> */}
 
       <SavedPlaces>
 
