@@ -14,7 +14,7 @@ const Search = () => {
        <FromToIcons>
          <Circle src="https://img.icons8.com/ios-filled/50/9CA3AF/filled-circle.png" />
 
-         {/* <Line src = "https://img.icons8.com/ios/50/9CA3AF/vertical-line.png"  /> */}
+         <Line src = "https://img.icons8.com/ios/50/9CA3AF/vertical-line.png"  />
 
          <Square src = "https://img.icons8.com/windows/50/000000/square-full.png" />
 
