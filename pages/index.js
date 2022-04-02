@@ -44,9 +44,9 @@ export default function Home() {
           </ActionButton>
 
 
-                </Link>
+                {/* </Link> */}
 
-                
+
           <ActionButton>
             <ActionButtonImage src="https://i.ibb.co/n776JLm/bike.png" />
              Wheel
