@@ -59,9 +59,9 @@ const Wrapper = tw.div`
  flex flex-col  h-screen
 `
 
-const Action = tw.div`
-flex-1 p-4
-`
+// const Action = tw.div`
+// flex-1 p-4
+// `
 
 const Header = tw.div`
 flex justify-between items-center pb-7
