@@ -63,9 +63,9 @@ const Action = tw.div`
 flex-1 p-4
 `
 
-// const Header = tw.div`
-// flex justify-between items-center pb-7
-// `
+const Header = tw.div`
+flex justify-between items-center pb-7
+`
 const  Logo = tw.img`
 h-20 rounded-full 
 `
