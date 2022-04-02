@@ -28,7 +28,7 @@ export default function Home() {
 
         </Header>
 
-        <ActionButtons>
+        {/* <ActionButtons>
           <ActionButton>
             <ActionButtonImage src="https://i.ibb.co/cyvcpfF/uberx.png"/>
              Ride
@@ -47,7 +47,7 @@ export default function Home() {
 
           </ActionButton>
 
-        </ActionButtons>
+        </ActionButtons> */}
 
       </Action>
     </Wrapper>
