@@ -47,9 +47,9 @@ const ButtonContainer = tw.div`
 bg-white  px-4
 `
 
-// const BackButton = tw.img`
-// h-12
-// `
+const BackButton = tw.img`
+h-12
+`
 const InputContainer = tw.div `
 bg-white flex items-center px-4 mb-2
 `
