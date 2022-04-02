@@ -79,12 +79,12 @@ const UserImage = tw.img `
 h-12 w-12 rounded-full border border-black-200 p-px
 `
 
-// const ActionButtons = tw.div `
-// flex 
-// `
-// const ActionButton = tw.div `
-// flex bg-gray-200 flex-1 m-1 h-32 items-center flex-col justify-center rounded-lg
-// `
-// const ActionButtonImage = tw.img `
-// h-3/5
-// `
+const ActionButtons = tw.div `
+flex 
+`
+const ActionButton = tw.div `
+flex bg-gray-200 flex-1 m-1 h-32 items-center flex-col justify-center rounded-lg
+`
+const ActionButtonImage = tw.img `
+h-3/5
+`
