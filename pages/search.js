@@ -12,7 +12,7 @@ const Search = () => {
 
       <InputContainer>
        <FromToIcons>
-         {/* <Circle src="https://img.icons8.com/ios-filled/50/9CA3AF/filled-circle.png" /> */}
+         <Circle src="https://img.icons8.com/ios-filled/50/9CA3AF/filled-circle.png" />
 
          <Line src = "https://img.icons8.com/ios/50/9CA3AF/vertical-line.png"  />
 
