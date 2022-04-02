@@ -6,9 +6,9 @@ const Search = () => {
   return (
     <Wrapper>
 
-      <ButtonContainer>
+      {/* <ButtonContainer>
           <BackButton src="https://img.icons8.com/ios-filled/50/000000/left.png" /> 
-      </ButtonContainer>
+      </ButtonContainer> */}
 
       <InputContainer>
        <FromToIcons>
