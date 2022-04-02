@@ -66,15 +66,15 @@ flex-1 p-4
 const Header = tw.div`
 flex justify-between items-center pb-7
 `
-const  Logo = tw.img`
-h-20 rounded-full 
-`
-const Profile = tw.div`
-flex items-center
-`
-const Name = tw.div`
-mr-4 w-20 text-lg
-`
+// const  Logo = tw.img`
+// h-20 rounded-full 
+// `
+// const Profile = tw.div`
+// flex items-center
+// `
+// const Name = tw.div`
+// mr-4 w-20 text-lg
+// `
 const UserImage = tw.img `
 h-12 w-12 rounded-full border border-black-200 p-px
 `
