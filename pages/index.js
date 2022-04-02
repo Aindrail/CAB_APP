@@ -16,7 +16,39 @@ export default function Home() {
     <Wrapper>
       <Map/>
       <Action>
-        Start
+        <Header>
+          <Logo src="https://cdn.dribbble.com/users/2723353/screenshots/9218361/media/f04476a4ff3d1ca059051348b2a7ebdd.png?compress=1&resize=1000x750&vertical=top"  />
+          <Profile>
+            <Name>
+              Aindrail
+            </Name>
+            <UserImage src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png" />
+            
+          </Profile>
+
+        </Header>
+
+        <ActionButtons>
+          <ActionButton>
+            <ActionButtonImage src="https://i.ibb.co/cyvcpfF/uberx.png"/>
+             Ride
+
+          </ActionButton>
+
+          <ActionButton>
+            <ActionButtonImage src="https://i.ibb.co/n776JLm/bike.png" />
+             Wheel
+
+          </ActionButton>
+
+          <ActionButton>
+            <ActionButtonImage src="https://i.ibb.co/5RjchBg/uberschedule.png" />
+             Reserve
+
+          </ActionButton>
+
+        </ActionButtons>
+
       </Action>
     </Wrapper>
     
@@ -28,5 +60,31 @@ const Wrapper = tw.div`
 `
 
 const Action = tw.div`
-flex-1
+flex-1 p-4
+`
+
+const Header = tw.div`
+flex justify-between items-center pb-7
+`
+const  Logo = tw.img`
+h-20 rounded-full 
+`
+const Profile = tw.div`
+flex items-center
+`
+const Name = tw.div`
+mr-4 w-20 text-lg
+`
+const UserImage = tw.img `
+h-12 w-12 rounded-full border border-black-200 p-px
+`
+
+const ActionButtons = tw.div `
+flex 
+`
+const ActionButton = tw.div `
+flex bg-gray-200 flex-1 m-1 h-32 items-center flex-col justify-center rounded-lg
+`
+const ActionButtonImage = tw.img `
+h-3/5
 `
