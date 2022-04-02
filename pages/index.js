@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Map from './components/Map'
 import tw from "tailwind-styled-components"
 import { Input } from 'postcss'
+import Link from 'next/link'
  
 
 export default function Home() {
@@ -30,12 +31,22 @@ export default function Home() {
         </Header>
 
         <ActionButtons>
+
+               <Link href="/search">
+
+            
+
+
           <ActionButton>
             <ActionButtonImage src="https://i.ibb.co/cyvcpfF/uberx.png"/>
              Ride
 
           </ActionButton>
 
+
+                </Link>
+
+                
           <ActionButton>
             <ActionButtonImage src="https://i.ibb.co/n776JLm/bike.png" />
              Wheel
