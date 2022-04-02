@@ -17,14 +17,14 @@ export default function Home() {
       <Map/>
       <Action>
         <Header>
-          <Logo src="https://cdn.dribbble.com/users/2723353/screenshots/9218361/media/f04476a4ff3d1ca059051348b2a7ebdd.png?compress=1&resize=1000x750&vertical=top"  />
+          {/* <Logo src="https://cdn.dribbble.com/users/2723353/screenshots/9218361/media/f04476a4ff3d1ca059051348b2a7ebdd.png?compress=1&resize=1000x750&vertical=top"  />
           <Profile>
             <Name>
               Aindrail
             </Name>
             <UserImage src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png" />
             
-          </Profile>
+          </Profile> */}
 
         </Header>
 
