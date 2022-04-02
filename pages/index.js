@@ -50,12 +50,12 @@ export default function Home() {
 
         </ActionButtons>
 
-        {/* <InputButtons>
+        <InputButtons>
           
         
         Where to?
         
-        </InputButtons> */}
+        </InputButtons>
 
       </Action>
     </Wrapper>
