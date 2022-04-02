@@ -30,10 +30,10 @@ export default function Home() {
 
         <ActionButtons>
           <ActionButton>
-            <ActionButtonImage src="https://i.ibb.co/cyvcpfF/uberx.png"/>
+            {/* <ActionButtonImage src="https://i.ibb.co/cyvcpfF/uberx.png"/>
              Ride
 
-          </ActionButton>
+          </ActionButton> */}
 
           <ActionButton>
             <ActionButtonImage src="https://i.ibb.co/n776JLm/bike.png" />
