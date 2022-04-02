@@ -41,11 +41,11 @@ export default function Home() {
 
           </ActionButton>
 
-          <ActionButton>
+          {/* <ActionButton>
             <ActionButtonImage src="https://i.ibb.co/5RjchBg/uberschedule.png" />
              Reserve
 
-          </ActionButton>
+          </ActionButton> */}
 
         </ActionButtons>
 
