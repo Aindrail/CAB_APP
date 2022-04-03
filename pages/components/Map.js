@@ -28,11 +28,12 @@ const Map = (props) => {
         }
         
         if(props.pickUpCoordinates && props.dropofCoordinates){
+            //Zoom to both the location we use fitbound
             map.fitBounds(
                 [
                     props.dropofCoordinates, props.pickUpCoordinates
                 ],{
-                    padding: 60
+                    padding: 60 // to fit both drop and pickup visible in a box more and padding adds space inside
                 }
             )
         }
