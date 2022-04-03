@@ -27,16 +27,16 @@ const Map = (props) => {
             addToMap(map, props.dropofCoordinates)
         }
         
-        // if(props.pickUpCoordinates && props.dropofCoordinates){
-        //     //Zoom to both the location we use fitbound
-        //     map.fitBounds(
-        //         [
-        //             props.dropofCoordinates, props.pickUpCoordinates
-        //         ],{
-        //             padding: 60 // to fit both drop and pickup visible in a box more and padding adds space inside
-        //         }
-        //     )
-        // }
+        if(props.pickUpCoordinates && props.dropofCoordinates){
+            //Zoom to both the location we use fitbound
+            map.fitBounds(
+                [
+                    props.dropofCoordinates, props.pickUpCoordinates
+                ],{
+                    padding: 60 // to fit both drop and pickup visible in a box more and padding adds space inside
+                }
+            )
+        }
 
         },[props.pickUpCoordinates, props.dropofCoordinates])
 
