@@ -20,10 +20,10 @@ const Confirm = () => {
            limit:1 //only one thing from the data
        })
      )
-     .then(response => response.json())
-     .then(data =>{
-        //  console.log(data.features[0].center)
-         setPickUpCoordinates(data.features[0].center)
+    //  .then(response => response.json())
+    //  .then(data =>{
+    //     //  console.log(data.features[0].center)
+    //      setPickUpCoordinates(data.features[0].center)
      })
   }
 
