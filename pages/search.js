@@ -37,7 +37,7 @@ const Search = () => {
           Saved Places
       </SavedPlaces>
 
-{/* <Link href={{
+<Link href={{
     pathname: "/confirm",
     query:{
         pickup: "Cuttack",
@@ -45,7 +45,7 @@ const Search = () => {
     }
 
 
-}}>  */}
+}}> 
 
     <center>
 
