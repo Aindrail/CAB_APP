@@ -23,7 +23,19 @@ const Map = (props) => {
             addToMap(map, props.pickUpCoordinates)
         }
         
-
+        if(props.dropofCoordinates){
+            addToMap(map, props.dropofCoordinates)
+        }
+        
+        if(props.pickUpCoordinates && props.dropofCoordinates){
+            map.fitBounds(
+                [
+                    props.dropofCoordinates, props.pickUpCoordinates
+                ],{
+                    padding: 60
+                }
+            )
+        }
 
         },[props.pickUpCoordinates, props.dropofCoordinates])
 
