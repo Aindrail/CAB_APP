@@ -37,13 +37,15 @@ const Search = () => {
           Saved Places
       </SavedPlaces>
 
+<Link href="/confirm"> 
+
     <center>
       <ConfirmButton>
 
           Confirm Location
       </ConfirmButton>
     </center>
-      
+</Link>  
 
     </Wrapper>
   )
@@ -52,7 +54,7 @@ const Search = () => {
 export default Search
 
 const Wrapper = tw.div `
-bg-gray-200 h-screen
+bg-gray-200 h-screen p-8
 `
 
 const ButtonContainer = tw.div`
@@ -78,7 +80,7 @@ const Square = tw.img `
 h-3
 `
 const InputBoxes = tw.div `
-flex flex-col flex-1
+flex flex-col flex-1  
 `
 const Input = tw.input `
 h-10 bg-gray-200 my-2 rounded-2 p-3 outline-none border-none
@@ -88,7 +90,7 @@ w-10 h-10 bg-gray-200 rounded-full mx-3 flex
 `
 
 const SavedPlaces = tw.div`
-flex items-center bg-white px-4 py-2
+flex items-center bg-white px-4 py-2 my-4 rounded-full
 `
 const StarIcon = tw.img`
 bg-gray-400 w-10 h-10 p-2 rounded-full mr-2
