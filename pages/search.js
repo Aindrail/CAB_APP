@@ -36,7 +36,7 @@ const Search = () => {
           <StarIcon src="https://img.icons8.com/ios-filled/50/ffffff/star--v1.png" />
           Saved Places
       </SavedPlaces>
-
+//to pass data from one page to another in link
 <Link href={{
     pathname: "/confirm",
     query:{
