@@ -18,7 +18,16 @@ const Map = () => {
         center: [77.947998, 23.473324],
         zoom: 5
         });
+
+        addToMap(map)
+
         })
+
+        const addToMap = (map) => {
+            const marker1 = new mapboxgl.Marker()
+            .setLngLat([12.554729, 55.70651])
+            .addTo(map);
+        }
 
   return (
     <Wrapper id="map">
