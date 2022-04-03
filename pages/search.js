@@ -1,9 +1,16 @@
-import React from 'react'
+import {useState} from 'react'
 import tw from "tailwind-styled-components"
 import Link from 'next/link'
 
 
 const Search = () => {
+
+    const [pickup, setPickUp] = useState("");
+    const[dropoff, setDropof] = useState("");
+
+    // console.log(pickup);
+    // console.log(dropof);
+
   return (
     <Wrapper>
          <Link href="/">
@@ -25,8 +32,16 @@ const Search = () => {
 
        <InputBoxes>
        
-        <Input placeholder='Enter pickup location' />
-        <Input placeholder='Where to ?' />
+        <Input 
+        placeholder='Enter pickup location'
+        value ={pickup}
+        onChange={(e)=> setPickUp(e.target.value)} 
+        />
+        <Input 
+        placeholder='Where to ?'
+        value={dropoff}
+        onChange={(e)=> setDropof(e.target.value)} // as value is intialised as empty string so it always be there util we use on change (e) where e is event
+         />
        
        </InputBoxes>
       <PlusIcon src="https://img.icons8.com/ios/50/000000/plus-math.png" />
@@ -36,12 +51,12 @@ const Search = () => {
           <StarIcon src="https://img.icons8.com/ios-filled/50/ffffff/star--v1.png" />
           Saved Places
       </SavedPlaces>
-//to pass data from one page to another in link
+{/* //to pass data from one page to another in link */}
 <Link href={{
     pathname: "/confirm",
-    query:{
-        pickup: "Cuttack",
-        dropoff: "Bhubhaneswar"
+    query:{  //blue ones will be received by routes
+        pickup: pickup,    
+        dropoff: dropoff
     }
 
 

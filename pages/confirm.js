@@ -1,17 +1,24 @@
 import {useEffect, useState} from 'react'
 import tw from "tailwind-styled-components"
 import Map from './components/Map'
+import { useRouter } from 'next/router'
 
 
 const Confirm = () => {
+//  used for catching the url query or get the data from url queries
+    const router = useRouter()
+    const {pickup, dropoff} = router.query
+
+    // console.log("Pickup",pickup);
+    // console.log("Dropoff",dropoff);
 
     const [pickUpCoordinates , setPickUpCoordinates] = useState()
     const [dropofCoordinates, setDropofCoordinates] = useState()
 
 
-  const getPickUpCoordinates = () => {
+  const getPickUpCoordinates = (pickup) => {
 
-     const pickup = "Bidanasi";
+  
      //Fetch() calls API
 
      fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${pickup}.json?`+ // paste url with acces token
@@ -27,11 +34,11 @@ const Confirm = () => {
      })
   }
 
-  const getDropofCoordinates = () => {
-    const dropof = "Bhubhaneswar";
+  const getDropofCoordinates = (dropoff) => {
+    
     //Fetch() calls API
 
-    fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${dropof}.json?`+ // paste url with acces token
+    fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${dropoff}.json?`+ // paste url with acces token
       new URLSearchParams({
           access_token: "pk.eyJ1IjoiYWluZHJhaWwiLCJhIjoiY2wxZ3gxdXRmMTdnZjNvbG50Y25nZTZ0ciJ9.GNxD2xX5SOb_YC63s9Hiaw",
           limit:1 //only one thing from the data
@@ -45,10 +52,10 @@ const Confirm = () => {
   }
 
   useEffect(() => {
-     getPickUpCoordinates();
-     getDropofCoordinates();
+     getPickUpCoordinates(pickup);
+     getDropofCoordinates(dropoff);
 
-  },[])
+  },[pickup,dropoff]) //[] means useEffect will work if values inside that [] changes
 
   
 
