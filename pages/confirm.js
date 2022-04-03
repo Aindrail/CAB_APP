@@ -14,12 +14,12 @@ const Confirm = () => {
      const pickup = "Bidanasi";
      //Fetch() calls API
 
-     fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${pickup}.json?`+ // paste url with acces token
-       new URLSearchParams({
-           access_token: "pk.eyJ1IjoiYWluZHJhaWwiLCJhIjoiY2wxZ3gxdXRmMTdnZjNvbG50Y25nZTZ0ciJ9.GNxD2xX5SOb_YC63s9Hiaw",
-           limit:1 //only one thing from the data
-       })
-     )
+    //  fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${pickup}.json?`+ // paste url with acces token
+    //    new URLSearchParams({
+    //        access_token: "pk.eyJ1IjoiYWluZHJhaWwiLCJhIjoiY2wxZ3gxdXRmMTdnZjNvbG50Y25nZTZ0ciJ9.GNxD2xX5SOb_YC63s9Hiaw",
+    //        limit:1 //only one thing from the data
+    //    })
+    //  )
      .then(response => response.json())
      .then(data =>{
         //  console.log(data.features[0].center)
