@@ -20,16 +20,16 @@ const Confirm = () => {
            limit:1 //only one thing from the data
        })
      )
-    //  .then(response => response.json())
-    //  .then(data =>{
-    //     //  console.log(data.features[0].center)
-    //      setPickUpCoordinates(data.features[0].center)
+     .then(response => response.json())
+     .then(data =>{
+        //  console.log(data.features[0].center)
+         setPickUpCoordinates(data.features[0].center)
      })
   }
 
   const getDropofCoordinates = () => {
     const dropof = "Bhubhaneswar";
-    Fetch() calls API
+    //Fetch() calls API
 
     fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${dropof}.json?`+ // paste url with acces token
       new URLSearchParams({
