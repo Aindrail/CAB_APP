@@ -8,7 +8,8 @@ import tw from "tailwind-styled-components"
   mapboxgl.accessToken = 'pk.eyJ1IjoiYWluZHJhaWwiLCJhIjoiY2wxZ3gxdXRmMTdnZjNvbG50Y25nZTZ0ciJ9.GNxD2xX5SOb_YC63s9Hiaw';
 // mapboxgl.accessToken = 'pk.eyJ1IjoibmF6YXJpeTE5OTUiLCJhIjoiY2t2bGlmdW12MHZlcDJ1bzA5OHh3NDIxeCJ9.li8l-1u52aCFd2ZdW-1IaA';
 
-const Map = () => {
+const Map = (props) => {
+    // console.log(props)
 
     useEffect(() => {
         const map = new mapboxgl.Map({
@@ -18,17 +19,25 @@ const Map = () => {
         center: [77.947998, 23.473324],
         zoom: 5
         });
+        if(props.pickUpCoordinates){
+            addToMap(map, props.pickUpCoordinates)
+        }
+        
 
-        addToMap(map)
 
-        })
+        },[props.pickUpCoordinates, props.dropofCoordinates])
 
-        const addToMap = (map) => {
+        const addToMap = (map,coordinates) => {
             const marker1 = new mapboxgl.Marker()
-            .setLngLat([12.554729, 55.70651])
+            .setLngLat(coordinates)
             .addTo(map);
         }
 
+        // useEffect(() =>{
+        //     if(pickUpCoordinates){
+        //         addToMap(map)
+        //     }
+        // },[props.pickUpCoordinates, props.dropofCoordinates]);
   return (
     <Wrapper id="map">
          
