@@ -6,8 +6,8 @@ import { useRouter } from 'next/router'
 
 const Confirm = () => {
 //  used for catching the url query or get the data from url queries
-    const router = useRouter()
-    const {pickup, dropoff} = router.query
+    // const router = useRouter()
+    // const {pickup, dropoff} = router.query
 
     // console.log("Pickup",pickup);
     // console.log("Dropoff",dropoff);
