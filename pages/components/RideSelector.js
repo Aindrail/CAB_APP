@@ -67,21 +67,21 @@ const CarList = tw.div`
 flex-1 overflow-y-scroll  //this is to make only list scroll and not the title
 `
 
-const Car = tw.div`
-flex p-4 items-center 
-`
-const CarImage = tw.img`
-h-14 mr-4
-`
-const CarDetails = tw.div`
- flex-1 
-`
-const Service = tw.div`
-font-medium text-lg
-`
-const Time = tw.div`
-text-small text-blue-500 
-`
-const Price = tw.div`
-text-lg font-medium
-`
+// const Car = tw.div`
+// flex p-4 items-center 
+// `
+// const CarImage = tw.img`
+// h-14 mr-4
+// `
+// const CarDetails = tw.div`
+//  flex-1 
+// `
+// const Service = tw.div`
+// font-medium text-lg
+// `
+// const Time = tw.div`
+// text-small text-blue-500 
+// `
+// const Price = tw.div`
+// text-lg font-medium
+// `
