@@ -113,9 +113,9 @@ const BackButton = tw.img`
 h-full object-contain 
 `
 
-// const ConfirmButtonContainer = tw.div `
-// border-t-2
-// `
-// const ConfirmButton = tw.div`
-//  text-center bg-black text-white m-5 py-4 text-xl
-// `
+const ConfirmButtonContainer = tw.div `
+border-t-2
+`
+const ConfirmButton = tw.div`
+ text-center bg-black text-white m-5 py-4 text-xl
+`
