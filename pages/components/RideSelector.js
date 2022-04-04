@@ -14,8 +14,9 @@ const RideSelector = ({pickUpCoordinates, dropofCoordinates}) => {
    rideDuration= fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${pickUpCoordinates[0]},${pickUpCoordinates[1]};${dropofCoordinates[0]},${dropofCoordinates[1]}?access_token=pk.eyJ1IjoiYWluZHJhaWwiLCJhIjoiY2wxZ3gxdXRmMTdnZjNvbG50Y25nZTZ0ciJ9.GNxD2xX5SOb_YC63s9Hiaw`)
     .then(res => res.json())
     .then( data => {
+      
       setRideDuration(data.routes[0].duration / 10) //we did rotes to the routes of {0} as it give multiple rotes to the destination and 0 is the min distance mostly
-    })
+    }) .catch((e) =>console.log(e))
     
   }, [pickUpCoordinates, dropofCoordinates]) //if the pickup and dropoff ever change it will refresh
   

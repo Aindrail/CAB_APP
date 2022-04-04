@@ -1,17 +1,36 @@
 import Head from 'next/head'
-import { useEffect } from 'react'
+import { useEffect,useState } from 'react'
 import Image from 'next/image'
  import styles from '../styles/Home.module.css'
 import Map from './components/Map'
 import tw from "tailwind-styled-components"
 import { Input } from 'postcss'
 import Link from 'next/link'
+import { auth } from '../firebase'
+import { onAuthStateChanged, signOut } from 'firebase/auth'
+import { useRouter } from 'next/router'
+
  
 
 export default function Home() {
 
  
+const [user, setUser] = useState(null)
+const router = useRouter()
 
+useEffect(() =>{
+return onAuthStateChanged(auth,user =>{
+  if(user){
+    setUser({
+      name: user.displayName,  //set user name and photo
+      photo: user.photoURL,
+    })
+  }else{
+      setUser(null)
+      router.push('/login') //send back to login page
+  }
+})
+},[])
 
   
   return (
@@ -22,9 +41,9 @@ export default function Home() {
           <Logo src="https://cdn.dribbble.com/users/2723353/screenshots/9218361/media/f04476a4ff3d1ca059051348b2a7ebdd.png?compress=1&resize=1000x750&vertical=top"  />
           <Profile>
             <Name>
-              Aindrail
+              {user && user.name}  {/* //if the user exits show me their user name */}
             </Name>
-            <UserImage src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png" />
+            <UserImage src={user && user.photo} onClick={()=> signOut(auth)} />
             
           </Profile>
 
@@ -92,10 +111,10 @@ const Profile = tw.div`
 flex items-center
 `
 const Name = tw.div`
-mr-4 w-20 text-lg
+mr-4 w-20 text-lg font-semibold
 `
 const UserImage = tw.img `
-h-12 w-12 rounded-full border border-black-200 p-px
+h-12 w-12 rounded-full border border-black-200 p-px cursor-pointer
 `
 
 const ActionButtons = tw.div `
