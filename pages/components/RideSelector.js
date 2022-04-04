@@ -10,7 +10,7 @@ const RideSelector = () => {
        </Title>
        <CarList>
           {/* It iterates over all the data available in carlist and display like a for each loop */}
-          {/* {
+           {
            carList.map((car,index)=>(
             <Car key={index}>
             <CarImage src= {car.imgUrl} />
@@ -28,7 +28,7 @@ const RideSelector = () => {
 
             </Car>
            ))   
-          } */}
+          } 
          
           
 
