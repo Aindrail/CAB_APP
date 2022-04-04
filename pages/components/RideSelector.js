@@ -56,12 +56,12 @@ const RideSelector = () => {
 
 export default RideSelector
 
-const Wrapper = tw.div`
- flex-col  flex flex-1  overflow-y-scroll   //this overflow is for only the list of cars and not for the whole page
-`
-const Title = tw.div`
-text-gray-500 text-center text-xs py-2 border-b
-`
+// const Wrapper = tw.div`
+//  flex-col  flex flex-1  overflow-y-scroll   //this overflow is for only the list of cars and not for the whole page
+// `
+// const Title = tw.div`
+// text-gray-500 text-center text-xs py-2 border-b
+// `
 
 const CarList = tw.div`
 flex-1 overflow-y-scroll  //this is to make only list scroll and not the title
