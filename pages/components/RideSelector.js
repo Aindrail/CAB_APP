@@ -1,8 +1,25 @@
-import React from 'react'
+import {useEffect,useState} from 'react'
+
+//useEffect is used to call API easily and make sure that the page dont crash and UseState to manage to state of something when it not changes
 import tw from 'tailwind-styled-components'
 import { carList } from '../data/carList'
 
-const RideSelector = () => {
+const RideSelector = ({pickUpCoordinates, dropofCoordinates}) => {
+
+   const [rideDuration, setRideDuration] = useState(0)
+
+  //get ride duration from mapbox API
+  useEffect(() => {
+    // template literal
+   rideDuration= fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${pickUpCoordinates[0]},${pickUpCoordinates[1]};${dropofCoordinates[0]},${dropofCoordinates[1]}?access_token=pk.eyJ1IjoiYWluZHJhaWwiLCJhIjoiY2wxZ3gxdXRmMTdnZjNvbG50Y25nZTZ0ciJ9.GNxD2xX5SOb_YC63s9Hiaw`)
+    .then(res => res.json())
+    .then( data => {
+      setRideDuration(data.routes[0].duration / 10) //we did rotes to the routes of {0} as it give multiple rotes to the destination and 0 is the min distance mostly
+    })
+    
+  }, [pickUpCoordinates, dropofCoordinates]) //if the pickup and dropoff ever change it will refresh
+  
+
   return (
     <Wrapper>
        <Title>
@@ -19,11 +36,13 @@ const RideSelector = () => {
                    {car.service}
                 </Service>
                 <Time>
-                  5 min away
+                  {console.log(rideDuration)}
+                   {((rideDuration*10) /60).toFixed(0)+' min away'}
                 </Time>
             </CarDetails>
             <Price>
-                Rs. 800
+             {'₹ ' + (rideDuration* car.multiplier).toFixed(2)} 
+              {/* toFixed to specify the decimal places */}
             </Price>
 
             </Car>

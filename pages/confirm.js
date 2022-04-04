@@ -14,8 +14,8 @@ const Confirm = () => {
     // console.log("Pickup",pickup);
     // console.log("Dropoff",dropoff);
 
-    const [pickUpCoordinates , setPickUpCoordinates] = useState()
-    const [dropofCoordinates, setDropofCoordinates] = useState()
+    const [pickUpCoordinates , setPickUpCoordinates] = useState([0,0])
+    const [dropofCoordinates, setDropofCoordinates] = useState([0,0])
 
 
   const getPickUpCoordinates = (pickup) => {
@@ -78,12 +78,15 @@ const Confirm = () => {
         </ButtonContainer>
         <Map
         pickUpCoordinates ={pickUpCoordinates}
-        dropofCoordinates={dropofCoordinates}
+        dropofCoordinates={dropofCoordinates}  //passed in map as a prop
         />
         <RideContainer>
 
 
-          <RideSelector />
+          <RideSelector 
+          pickUpCoordinates ={pickUpCoordinates}
+          dropofCoordinates={dropofCoordinates} //passed in RideSelector as a prop
+          />
 
           <ConfirmButtonContainer>
              <ConfirmButton>
@@ -117,5 +120,5 @@ const ConfirmButtonContainer = tw.div `
 border-t-2
 `
 const ConfirmButton = tw.div`
- text-center bg-black text-white m-5 py-4 text-xl
+ text-center bg-black text-white m-5 py-4 text-xl cursor-pointer
 `
