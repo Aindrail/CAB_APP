@@ -18,23 +18,23 @@ const Login = () => {
 
 export default Login
 
-const Wrapper = tw.div`
- flex flex-col h-screen p-4 bg-gray-200
-`
+// const Wrapper = tw.div`
+//  flex flex-col h-screen p-4 bg-gray-200
+// `
 
-const SignInButton = tw.button`
-bg-black text-white text-center py-4 mt-8 self-center w-full text-xl
-`
-const Logo = tw.img`
-h-20 w-auto object-contain self-start self-center 
-// obj-con to make the image res save 
+// const SignInButton = tw.button`
+// bg-black text-white text-center py-4 mt-8 self-center w-full text-xl
+// `
+// const Logo = tw.img`
+// h-20 w-auto object-contain self-start self-center 
+// // obj-con to make the image res save 
 
-`
+// `
 
-const Title = tw.div`
-text-5xl pt-4 text-gray-500
-`
-const HeadImage = tw.img`
-object-contain self-center w-full
-`
+// const Title = tw.div`
+// text-5xl pt-4 text-gray-500
+// `
+// const HeadImage = tw.img`
+// object-contain self-center w-full
+// `
 
