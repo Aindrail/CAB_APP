@@ -5,9 +5,9 @@ import { carList } from '../data/carList'
 const RideSelector = () => {
   return (
     <Wrapper>
-       <Title>
+       {/* <Title>
            Choose a ride or Swipe up for more
-       </Title>
+       </Title> */}
        <CarList>
           
           {
