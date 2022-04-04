@@ -83,10 +83,10 @@ const Confirm = () => {
         <RideContainer>
 
 
-          {/* <RideSelector 
+          <RideSelector 
           pickUpCoordinates ={pickUpCoordinates}
           dropofCoordinates={dropofCoordinates} //passed in RideSelector as a prop
-          /> */}
+          />
 
           <ConfirmButtonContainer>
              <ConfirmButton>
