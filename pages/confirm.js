@@ -34,7 +34,7 @@ const Confirm = () => {
     })
      .then(data =>{
         //  console.log(data.features[0].center)
-        if(data.features[0])
+        // if(data.features[0])
          setPickUpCoordinates(data.features[0].center)
      })
   }
@@ -54,10 +54,10 @@ const Confirm = () => {
     })
     .then(data =>{
         // console.log(data.features[0].center)
-        if(data.features[0])
+        // if(data.features[0])
         setDropofCoordinates(data.features[0].center)
-        else
-        console.log(Error)
+        // else
+        // console.log(Error)
         
     }) 
   }

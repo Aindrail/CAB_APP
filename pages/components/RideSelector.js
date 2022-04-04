@@ -16,7 +16,7 @@ const RideSelector = ({pickUpCoordinates, dropofCoordinates}) => {
     .then( data => {
       
       setRideDuration(data.routes[0].duration / 10) //we did rotes to the routes of {0} as it give multiple rotes to the destination and 0 is the min distance mostly
-    }) .catch((e) =>console.log(e))
+     }) .catch((e) =>console.log(e))
     
   }, [pickUpCoordinates, dropofCoordinates]) //if the pickup and dropoff ever change it will refresh
   
