@@ -35,15 +35,15 @@ const RideSelector = ({pickUpCoordinates, dropofCoordinates}) => {
                 <Service>
                    {car.service}
                 </Service>
-                <Time>
+                {/* <Time>
                   {console.log(rideDuration)}
                    {((rideDuration*10) /60).toFixed(0)+' min away'}
-                </Time>
+                </Time> */}
             </CarDetails>
-            <Price>
+            {/* <Price>
              {'₹ ' + (rideDuration* car.multiplier).toFixed(2)} 
               {/* toFixed to specify the decimal places */}
-            </Price>
+            </Price> */}
 
             </Car>
            ))   
