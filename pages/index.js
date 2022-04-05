@@ -30,7 +30,7 @@ return onAuthStateChanged(auth,user =>{
       router.push('/login') //send back to login page
   }
 })
-},[])
+},[router])
 
   
   return (
@@ -51,7 +51,7 @@ return onAuthStateChanged(auth,user =>{
 
         <ActionButtons>
 
-               <Link href="/search">
+               <Link href="/search" passHref>
 
             
 
