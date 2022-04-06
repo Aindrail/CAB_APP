@@ -120,5 +120,5 @@ const StarIcon = tw.img`
 bg-gray-400 w-10 h-10 p-2 rounded-full mr-2
 `
 const ConfirmButton = tw.div`
-bg-black text-white px-3 py-4 m-4 mt-5 flex justify-center text-2xl cursor-pointer w-1/4 rounded-full tranform hover:bg-green-500 transition
+bg-black text-white px-3 py-4 m-4 mt-5 flex justify-center text-2xl cursor-pointer w-1/3 rounded-full tranform hover:bg-green-500 transition
 `
